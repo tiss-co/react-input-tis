@@ -1,3 +1,7 @@
+body {
+  background-color: #171819;
+}
+
 .App {
   display: flex;
   flex-flow: column;
@@ -18,7 +22,6 @@
   align-items: center;
   justify-content: center;
 }
-
 
 .Container {
   margin: 10px;

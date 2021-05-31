@@ -53,12 +53,17 @@ $font-color-error: #ff3939;
 .Label {
   font-size: var(--font-size-medium);
   white-space: nowrap;
+  color: $font-color-medium-light;
+
+  &.Dark {
+    color: $font-color-medium-dark;
+  }
 }
 
 .Input {
   height: fit-content;
   width: fit-content;
-  background-color: transparent;
+  background-color: transparent !important;
   font-family: $font-family-medium;
   font-size: var(--font-size-x-small);
   color: $font-color-medium-light;
@@ -66,7 +71,7 @@ $font-color-error: #ff3939;
   border: none;
   border-bottom: 1px solid $bg-color-border-light;
   display: block;
-  padding-left: 5px;
+  padding-left: 5px !important;
   font-style: italic;
   @media (max-width: $screen_width_HD) {
     font-size: var(--font-size-small);
@@ -74,10 +79,10 @@ $font-color-error: #ff3939;
 
   &.RoundedBorder,
   &.RoundedBorderError {
-    border: 1px solid $bg-color-border-light;
-    border-radius: 25px;
-    padding: 8px;
-    padding-left: 15px;
+    border: 1px solid $bg-color-border-light !important;
+    border-radius: 25px !important;
+    padding: 8px !important;
+    padding-left: 15px !important;
   }
 
   &.RoundedBorderError {

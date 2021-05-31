@@ -96,7 +96,9 @@ export const Input = ({
     >
       {
         label &&
-        <span className={classNames(css.Label, labelClassName)}>
+        <span className={classNames(css.Label, {
+          [css.Dark]: darkMode
+        }, labelClassName)}>
           {label}
         </span>
       }
