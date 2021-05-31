@@ -68,7 +68,7 @@ const App = () => {
             number: value
           }))}
           autoFocus={false}
-          darkMode={true}
+          darkMode={false}
         />
         <Input
           containerClassName='Container'
