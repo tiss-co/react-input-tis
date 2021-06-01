@@ -90,25 +90,25 @@ export const Input = ({
 
   return (
     <div
-      className={classNames(css.Container, {
-        [css.Dark]: darkMode
+      className={classNames(css.Container_InputTis, {
+        [css.Dark_InputTis]: darkMode
       }, containerClassName)}
     >
       {
         label &&
-        <span className={classNames(css.Label, {
-          [css.Dark]: darkMode
+        <span className={classNames(css.Label_InputTis, {
+          [css.Dark_InputTis]: darkMode
         }, labelClassName)}>
           {label}
         </span>
       }
-      <div className={css.InputContainer}>
+      <div className={css.InputContainer_InputTis}>
         <input
-          className={classNames(css.Input, {
-            [css.Invalid]: !isValid,
-            [css.RoundedBorder]: roundedBorder && isValid,
-            [css.RoundedBorderError]: roundedBorder && !isValid,
-            [css.Dark]: darkMode
+          className={classNames(css.Input_InputTis, {
+            [css.Invalid_InputTis]: !isValid,
+            [css.RoundedBorder_InputTis]: roundedBorder && isValid,
+            [css.RoundedBorderError_InputTis]: roundedBorder && !isValid,
+            [css.Dark_InputTis]: darkMode
           }, inputClassName)}
           placeholder={placeholder}
           onChange={handleTextChange}

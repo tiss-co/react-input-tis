@@ -19,14 +19,14 @@ $font-color-error: #ff3939;
   }
 }
 
-.Container {
+.Container_InputTis {
   display: flex;
   flex-flow: column;
   align-items: flex-start;
   justify-content: center;
 }
 
-.InputContainer {
+.InputContainer_InputTis {
   display: flex;
   flex-flow: row;
   align-items: center;
@@ -43,24 +43,24 @@ $font-color-error: #ff3939;
     fill: $svg-color-light !important;
   }
 
-  &.Dark {
+  &.Dark_InputTis {
     > svg {
       fill: $svg-color-dark !important;
     }
   }
 }
 
-.Label {
+.Label_InputTis {
   font-size: var(--font-size-medium);
   white-space: nowrap;
   color: $font-color-medium-light;
 
-  &.Dark {
+  &.Dark_InputTis {
     color: $font-color-medium-dark;
   }
 }
 
-.Input {
+.Input_InputTis {
   height: fit-content;
   width: fit-content;
   background-color: transparent !important;
@@ -77,15 +77,15 @@ $font-color-error: #ff3939;
     font-size: var(--font-size-small);
   }
 
-  &.RoundedBorder,
-  &.RoundedBorderError {
+  &.RoundedBorder_InputTis,
+  &.RoundedBorderError_InputTis {
     border: 1px solid $bg-color-border-light !important;
     border-radius: 25px !important;
     padding: 8px !important;
     padding-left: 15px !important;
   }
 
-  &.RoundedBorderError {
+  &.RoundedBorderError_InputTis {
     border-color: $font-color-error !important;
   }
 
@@ -94,14 +94,14 @@ $font-color-error: #ff3939;
     font-family: $font-family-regular;
   }
 
-  &.Invalid {
+  &.Invalid_InputTis {
     border-bottom: 0.06em solid $font-color-error;
   }
 
-  &.Dark {
+  &.Dark_InputTis {
     color: $font-color-medium-dark;
     border-bottom: 1px solid $bg-color-border-dark;
-    &.RoundedBorder {
+    &.RoundedBorder_InputTis {
       border: 1px solid $bg-color-border-dark;
     }
   }
