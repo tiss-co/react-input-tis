@@ -29,7 +29,7 @@ $font-color-error: #ff3939;
 .InputContainer_InputTis {
   display: flex;
   flex-flow: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   position: relative;
   width: fit-content !important;
