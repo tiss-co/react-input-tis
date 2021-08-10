@@ -95,7 +95,7 @@ $font-color-error: #ff3939;
   }
 
   &.Invalid_InputTis {
-    border-bottom: 0.06em solid $font-color-error;
+    border-color: $font-color-error;
   }
 
   &.Dark_InputTis {
