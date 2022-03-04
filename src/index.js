@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import css from './styles.module.scss';
-import { EyeIcon } from './assets/icons';
+import { VisibleIcon, HideIcon } from './assets/icons';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
@@ -117,10 +117,14 @@ export const Input = ({
           autoFocus={autoFocus}
           {...props}
         />
-        {type === inputType.password && (
-          <EyeIcon
-            onMouseDown={() => setShowPassword(true)}
-            onMouseUp={() => setShowPassword(false)}
+        {type === inputType.password && showPassword && (
+          <HideIcon
+            onClick={() => setShowPassword(false)}
+          />
+        )}
+        {type === inputType.password && !showPassword && (
+          <VisibleIcon
+            onClick={() => setShowPassword(true)}
           />
         )}
       </div>
