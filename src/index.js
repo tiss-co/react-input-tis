@@ -45,6 +45,7 @@ export const Input = ({
   darkMode = false,
   minLength = 1,
   label,
+  id,
   ...props
 }) => {
   const [isValid, setIsValid] = useState(true);
@@ -115,6 +116,7 @@ export const Input = ({
           type={showPassword ? inputType.text : type}
           value={value}
           autoFocus={autoFocus}
+          id={id}
           {...props}
         />
         {type === inputType.password && showPassword && (
