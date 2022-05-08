@@ -148,4 +148,5 @@ Input.propTypes = {
   darkMode: PropTypes.bool,
   minLength: PropTypes.number,
   label: PropTypes.string,
+  id: PropTypes.string,
 };
