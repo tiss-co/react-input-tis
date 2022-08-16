@@ -1,8 +1,5 @@
 $screen_width_HD: 1280px;
 
-$font-family-medium: Helvetica-Neue-Medium;
-$font-family-regular: Helvetica-Neue-Regular;
-
 $svg-color-light: #5d6670;
 $svg-color-dark: #a7abaf;
 $bg-color-border-light: #d5d5d3;
@@ -64,7 +61,6 @@ $font-color-error: #ff3939;
   height: fit-content;
   width: fit-content;
   background-color: transparent !important;
-  font-family: $font-family-medium;
   font-size: var(--font-size-x-small);
   color: $font-color-medium-light;
   outline: none;
@@ -91,7 +87,6 @@ $font-color-error: #ff3939;
 
   &::placeholder {
     font-style: italic;
-    font-family: $font-family-regular;
   }
 
   &.Invalid_InputTis {
